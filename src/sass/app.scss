@@ -1,0 +1,54 @@
+// =============================================================================
+// Main
+// =============================================================================
+// Remove and add as need be. Normalize items are added in relevent element and
+// reset files so if not use then remove the file and the normalize effect is
+// also removed.
+
+
+// Bootstrap
+// =============================================================================
+// All the parts that should be loaded in ASAP.
+
+@import 'config.variables';
+@import 'config.fonts';
+
+
+// Base
+// =============================================================================
+// Set defaults for HTML elements with some helper access classes.
+
+@import 'base/code.scss';
+@import 'base/document';
+@import 'base/form';
+@import 'base/hr';
+@import 'base/html5';
+@import 'base/img';
+@import 'base/link';
+@import 'base/list';
+@import 'base/quote';
+@import 'base/reset';
+@import 'base/table';
+@import 'base/typography';
+
+
+// Objects
+// =============================================================================
+// Reusable objects for non-specific cases.
+
+@import 'objects/input';
+
+
+// Components
+// =============================================================================
+// Large objects typically for a specific case.
+
+@import 'components/app';
+
+
+// Bower
+// =============================================================================
+// External libs from Bower
+
+$fa-font-path: '/components/font-awesome/fonts';
+@import 'font-awesome/scss/font-awesome';

@@ -1,0 +1,22 @@
+// =============================================================================
+// Code
+// =============================================================================
+
+
+code,
+kbd,
+pre,
+samp {
+    @extend %font-code;
+}
+
+code {
+    background: rgba(193, 199, 208, .3);
+    padding: .25em .5em;
+    vertical-align: middle;
+}
+
+pre {
+    margin-bottom: 1em;
+    overflow: auto;
+}
