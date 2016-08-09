@@ -21,6 +21,6 @@ th {
 
 .table-striped {
     tbody tr:nth-of-type(odd) {
-        background-color: darken($color--font, 10%);
+        background-color: darken($base-font-color, 10%);
     }
 }

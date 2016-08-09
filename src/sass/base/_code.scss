@@ -7,7 +7,7 @@ code,
 kbd,
 pre,
 samp {
-    @extend %font-code;
+    @include font-code;
 }
 
 code {
