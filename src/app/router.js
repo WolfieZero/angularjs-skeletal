@@ -2,7 +2,7 @@
 // Routes
 // =============================================================================
 
-app.config(function($stateProvider, $urlRouterProvider) {
+app.config(($stateProvider, $urlRouterProvider) => {
 
     $urlRouterProvider.otherwise('/home');
     $stateProvider

@@ -41,7 +41,7 @@ app.config(['RestangularProvider', function (RestangularProvider) {
 // Routes
 // =============================================================================
 
-app.config(function($stateProvider, $urlRouterProvider) {
+app.config(function ($stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider.otherwise('/home');
     $stateProvider
