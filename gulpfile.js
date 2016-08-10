@@ -248,17 +248,25 @@ gulp.task('image', () => {
 gulp.task('watch', ['build'], () => {
 
     // Styling
-    gulp.watch([config.sourceDirectory + '/sass/**/*.scss'], ['sass']).on('change', browserSync.reload);
+    gulp.watch([config.sourceDirectory + '/sass/**/*.scss'], ['sass']);
 
     // Javascript
-    gulp.watch([config.sourceDirectory + '/app/**/*.js'], ['app']).on('change', browserSync.reload);
-    gulp.watch([config.sourceDirectory + '/lib/**/*.js'], ['lib']).on('change', browserSync.reload);
+    gulp.watch([config.sourceDirectory + '/app/**/*.js'], ['app']);
+    gulp.watch([config.sourceDirectory + '/lib/**/*.js'], ['lib']);
 
     // HTML
-    gulp.watch([config.sourceDirectory + '/app/**/*.html'], ['html']).on('change', browserSync.reload);
+    gulp.watch([config.sourceDirectory + '/app/**/*.html'], ['html']);
 
     // Images
-    gulp.watch([config.buildDirectory + '/images/**/*.*'], ['image']).on('change', browserSync.reload);
+    gulp.watch([config.buildDirectory + '/images/**/*.*'], ['image']);
+
+    // Browser reload events
+    gulp.watch([
+        config.buildDirectory + '/css/app.css',
+        config.buildDirectory + '/js/app.js',
+        config.buildDirectory + '/js/lib.js',
+        config.buildDirectory + '/js/templates.js'
+    ]).on('change', browserSync.reload);
 
 });
 
