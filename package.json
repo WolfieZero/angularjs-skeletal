@@ -1,5 +1,5 @@
 {
-  "name": "angularjs-skeletal",
+  "name": "skeletal-angularjs",
   "version": "1.0.0",
   "description": "AngularJS ES2015 boilerplate for new projects",
   "main": "public/index.html",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/WolfieZero/angularjs-skeletal.git"
+    "url": "git+https://github.com/WolfieZero/skeletal-angularjs.git"
   },
   "author": "Neil Sweeney",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/WolfieZero/angularjs-skeletal/issues"
+    "url": "https://github.com/WolfieZero/skeletal-angularjs/issues"
   },
-  "homepage": "https://github.com/WolfieZero/angularjs-skeletal#readme",
+  "homepage": "https://github.com/WolfieZero/skeletal-angularjs#readme",
   "devDependencies": {
     "browser-sync": "^2.14.0",
     "gulp": "^3.9.1",
